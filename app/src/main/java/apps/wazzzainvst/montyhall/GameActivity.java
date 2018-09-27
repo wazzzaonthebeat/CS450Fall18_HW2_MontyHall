@@ -201,7 +201,7 @@ public class GameActivity extends AppCompatActivity {
         //stick or switch round
         soundPool.play(stickSound, 1f, 1f, 1, 0, 1f);
         anim =  AnimatorInflater.loadAnimator(this,R.animator.door_open);
-        pref.edit().putInt("round", 1).apply(); //update 2 round 1
+
         int doorSelected = pref.getInt("selected", 1);
         //stick with selected so open the door selected
         gameWindow.setBackgroundColor(getResources().getColor(R.color.black));
@@ -268,7 +268,6 @@ public class GameActivity extends AppCompatActivity {
         soundPool.play(swtichSound, 1f, 1f, 1, 0, 1f);
         anim =  AnimatorInflater.loadAnimator(this,R.animator.door_open);
         gameWindow.setBackgroundColor(getResources().getColor(R.color.black));
-        pref.edit().putInt("round", 1).apply(); //update 2 round 1
 
         prompt.setText(R.string.please);
         //switch to other unopened door

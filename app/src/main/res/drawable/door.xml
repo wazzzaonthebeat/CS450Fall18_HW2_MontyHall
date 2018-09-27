@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/closed_door" />
+    <item android:drawable="@drawable/closed_door_chosen" />
+    <item android:drawable="@drawable/car" />
+    <item android:drawable="@drawable/goat" />
+    <item android:drawable="@drawable/three" />
+    <item android:drawable="@drawable/two" />
+    <item android:drawable="@drawable/one" />
+</selector>
